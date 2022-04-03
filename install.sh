@@ -40,7 +40,7 @@ echo Installing htop
 sudo dnf install htop -y
 
 echo Installing zsh
-sudo dnf install zsh -y
+sudo dnf install zsh zsh-autosuggestions zsh-syntax-highlighting -y
 
 echo Installing fragments
 sudo dnf install fragments -y
@@ -56,3 +56,6 @@ sudo dnf install @virtualization -y
 
 echo Installing openRGB
 sudo dnf install openrgb -y
+
+echo Intalling mangoHUD
+sudo dnf install mangohud
