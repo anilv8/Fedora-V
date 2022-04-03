@@ -22,6 +22,11 @@ sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.co
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install brave-browser -y
 
+echo Installing LibreWolf
+sudo rpm --import https://keys.openpgp.org/vks/v1/by-fingerprint/034F7776EF5E0C613D2F7934D29FBD5F93C0CFC3
+sudo dnf config-manager --add-repo https://rpm.librewolf.net -y
+sudo dnf install librewolf -y
+
 echo Installing neofetch
 sudo dnf install neofetch -y
 
