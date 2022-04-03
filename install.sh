@@ -51,6 +51,10 @@ sudo dnf install steam -y
 echo Installing lutris
 sudo dnf install lutris -y
 
+echo Installing Wine
+sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/35/winehq.repo -y
+sudo dnf install winehq-staging -y
+
 echo Installing Virtualization tools
 sudo dnf install @virtualization -y
 
@@ -58,4 +62,4 @@ echo Installing openRGB
 sudo dnf install openrgb -y
 
 echo Intalling mangoHUD
-sudo dnf install mangohud
+sudo dnf install mangohud -y
