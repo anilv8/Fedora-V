@@ -13,14 +13,23 @@ sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-open
 sudo dnf install lame\* --exclude=lame-devel -y
 sudo dnf group upgrade --with-optional Multimedia -y
 
+echo Installing non-free nVidia driver
+sudo dnf install akmod-nvidia -y
+
+echo Installing Brave /
+sudo dnf install dnf-plugins-core -y
+sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
+sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
+sudo dnf install brave-browser -y
+
 echo Installing neofetch
 sudo dnf install neofetch -y
 
 echo Installing Thunderbird
 sudo dnf install thunderbird -y
 
-echo Installing non-free nVidia driver
-sudo dnf install akmod-nvidia -y
+echo Installing Spotify
+flatpak install flathub com.spotify.Client -y
 
 echo Installing htop
 sudo dnf install htop -y
@@ -36,9 +45,6 @@ sudo dnf install steam -y
 
 echo Installing lutris
 sudo dnf install lutris -y
-
-echo Installing Spotify
-flatpak install flathub com.spotify.Client -y
 
 echo Installing Virtualization tools
 sudo dnf install @virtualization -y
