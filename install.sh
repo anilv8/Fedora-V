@@ -1,4 +1,3 @@
-
 echo Adding the free RPM Fusion repositories
 sudo dnf install \
   https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm -y
@@ -32,6 +31,9 @@ sudo dnf install neofetch -y
 echo Installing Thunderbird
 sudo dnf install thunderbird -y
 
+echo adding flathub remote
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 echo Installing Spotify
 flatpak install flathub com.spotify.Client -y
 
@@ -41,8 +43,11 @@ sudo dnf install htop -y
 echo Installing zsh
 sudo dnf install zsh zsh-autosuggestions zsh-syntax-highlighting -y
 
-echo Installing fragments
-sudo dnf install fragments -y
+echo Installing transmission
+sudo dnf install transmission -y
+
+echo Installing Virtualization tools
+sudo dnf install @virtualization -y
 
 echo Installing steam
 sudo dnf install steam -y
@@ -53,9 +58,6 @@ sudo dnf install lutris -y
 echo Installing Wine
 sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/35/winehq.repo -y
 sudo dnf install winehq-staging -y
-
-echo Installing Virtualization tools
-sudo dnf install @virtualization -y
 
 echo Installing openRGB
 sudo dnf install openrgb -y
