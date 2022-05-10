@@ -1,39 +1,40 @@
-sudo dnf install plasma-desktop
-sudo dnf install plasma-workspace
-sudo dnf install qt5-qtbase-gui
-sudo dnf install sddm
-sudo dnf install sddm-breeze
-sudo dnf install sddm-kcm
-sudo dnf install NetworkManager-config-connectivity-fedora
-sudo dnf install PackageKit-command-not-found
-sudo dnf install abrt-desktop
-sudo dnf install adwaita-gtk2-theme
-sudo dnf install bluedevil
-sudo dnf install breeze-icon-theme
-sudo dnf install colord-kde
-sudo dnf install cups-pk-helper
-sudo dnf install dnfdragora
-sudo dnf install dolphin
-sudo dnf install firewall-config 
-glibc-all-langpacks
-sudo dnf install gnome-keyring-pam
-sudo dnf install gwenview
-sudo dnf install initial-setup-gui
-sudo dnf install kamera
-sudo dnf install kcalc
-sudo dnf install kcharselect
-sudo dnf install kde-gtk-config
-sudo dnf install kde-partitionmanager
-sudo dnf install kde-print-manager
-sudo dnf install kde-settings-pulseaudio
-sudo dnf install kdegraphics-thumbnailers
-sudo dnf install kdeplasma-addons
-sudo dnf install kdialog
-sudo dnf install kdnssd
-sudo dnf install keditbookmarks
-sudo dnf install kf5-akonadi-server
-sudo dnf install kf5-akonadi-server-mysql
-sudo dnf install kf5-baloo-file
+sudo dnf install \
+  plasma-desktop \ 
+  plasma-workspace
+\ qt5-qtbase-gui
+\ sddm
+\ sddm-breeze
+\ sddm-kcm
+\ NetworkManager-config-connectivity-fedora
+\ PackageKit-command-not-found
+\abrt-desktop
+\ adwaita-gtk2-theme
+\ bluedevil
+\ breeze-icon-theme
+\ colord-kde
+\ cups-pk-helper
+\ dnfdragora
+\ dolphin
+\ firewall-config 
+\ glibc-all-langpacks
+\ gnome-keyring-pam
+\ gwenview
+\ initial-setup-gui
+\ kamera
+\ kcalc
+\ kcharselect
+\ kde-gtk-config
+\ kde-partitionmanager
+\ kde-print-manager
+\ kde-settings-pulseaudio
+\ kdegraphics-thumbnailers
+\ kdeplasma-addons
+\ kdialog
+\ kdnssd
+\ keditbookmarks
+\ kf5-akonadi-server
+\ kf5-akonadi-server-mysql
+\ kf5-baloo-file
 sudo dnf install kf5-kipi-plugins
 sudo dnf install khelpcenter
 sudo dnf install khotkeys
