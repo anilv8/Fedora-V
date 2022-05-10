@@ -14,7 +14,8 @@ sudo dnf install colord-kde
 sudo dnf install cups-pk-helper
 sudo dnf install dnfdragora
 sudo dnf install dolphin
-sudo dnf install firewall-configlibc-all-langpacks
+sudo dnf install firewall-config 
+glibc-all-langpacks
 sudo dnf install gnome-keyring-pam
 sudo dnf install gwenview
 sudo dnf install initial-setup-gui
