@@ -14,12 +14,6 @@ sudo dnf group upgrade --with-optional Multimedia -y
 echo Installing non-free nVidia driver
 sudo dnf install akmod-nvidia -y
 
-echo Installing Brave /
-sudo dnf install dnf-plugins-core -y
-sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/
-sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
-sudo dnf install brave-browser -y
-
 echo Installing LibreWolf
 sudo rpm --import https://keys.openpgp.org/vks/v1/by-fingerprint/034F7776EF5E0C613D2F7934D29FBD5F93C0CFC3
 sudo dnf config-manager --add-repo https://rpm.librewolf.net -y
@@ -36,6 +30,9 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 echo Installing Spotify
 flatpak install flathub com.spotify.Client -y
+
+echo Installing Brave
+flatpak install flathub com.brave.Browser -y
 
 echo Installing htop
 sudo dnf install htop -y
@@ -56,7 +53,7 @@ echo Installing lutris
 sudo dnf install lutris -y
 
 echo Installing Wine
-sudo dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/35/winehq.repo -y
+dnf config-manager --add-repo https://dl.winehq.org/wine-builds/fedora/36/winehq.repo -y
 sudo dnf install winehq-staging -y
 
 echo Installing openRGB
